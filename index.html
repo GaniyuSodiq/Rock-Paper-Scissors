@@ -6,6 +6,87 @@
     <title>Rock Paper Scissor</title>
 </head>
 <body>
+
+    <!--
+    
+    Rock paper scissors - PROBLEM AND SOLUTION BREAK DOWN
+
+STEP 1 UNDERSTAND THE PROBLEM
+It is a game mostly played by 2 individuals by forming a hand symbol.
+The two players draw their hand at the same time after the saying the trigger words together.
+
+A fist represents rock. 
+A peace represents scissors. 
+And an open hand represents paper.
+
+Rock beats scissors but losses to paper.
+Paper beats rock but loses scissors.
+Scissors beat paper but loses to rock.
+
+The result is a tie if both players form the same hand symbol.
+
+STEP 2 PLAN THE SOLUTION
+•	Does your program have a user interface? What will it look like? What functionality will the interface have? Sketch this out on paper.
+IT WILL BE PLAYED ON THE CONSOLE
+
+•	What inputs will your program have? Will the user enter data or will you get input from somewhere else?
+THE USER WILL INPUT “R” FOR ROCK, “P” FOR PAPER, “S” FOR SCISSORS.
+THE OTHER PLAYER WHICH IS COMPUTER, GENERATES ANY OF THE 3 RANDOMLY.
+
+•	What’s the desired output?
+A MESSAGE ON SCREEN TELLING US THE FIRST PLAYER TO GET TO 5 POINTS AS WINNER
+
+•	Given your inputs, what are the steps necessary to return the desired output?
+THE USER’S POINT START AT 0
+THE COMPUTER’S POINT START AT 0
+THE SYSTEM BEGIN THE FIRST ROUND
+THE SYSTEM TAKES IN WHAT THE USER PRESSED AMONG R P S AS A VALUE
+AND RANDOMLY GENERATES THE COMPUTER’S VALUE
+COMPARES THE TWO VALUES AND GIVES A POINT TO THE RIGHT PLAYER USING 
+	ROCK VS SCISSORS = ROCK WINS
+	SCISSORS  VS PAPER = SCISSOR WINS
+	PAPER VS ROCK = PAPER WINS
+THE SYSTEM STORES THE POINT FOR THE OR THE WINNER
+THE SYSTEM BEGINS THE NEXT ROUND SO FAR NONE OF THE USER IS AT 5 POINT
+IF A USER GETS TO 5 POINTS, THE USER IS CROWNED A WINNER AND THE GAME ENDS
+
+STEP 3 PSEUDOCODE THE SOLUTION
+
+THE SYSTEM BEGIN THE FIRST ROUND
+Initialize the point of user to 0
+Initialize the point of computer to 0
+Initialize a count for the number of rounds to 1
+THE SYSTEM TAKES IN WHAT THE USER PRESSED AMONG R P S AS A VALUE
+Prompt the user to enter a value between r,p,s 
+AND RANDOMLY GENERATES THE COMPUTER’S VALUE
+Randomly generate a value between 3 options
+COMPARES THE TWO VALUES AND GIVES A POINT TO THE RIGHT PLAYER USING 
+Compare the rom the user against the value generated for the computer
+	ROCK VS SCISSORS = ROCK WINS
+	SCISSORS  VS PAPER = SCISSOR WINS
+	PAPER VS ROCK = PAPER WINS
+THE SYSTEM STORES THE POINT FOR THE WINNER
+The winner’s point is increase by 1	
+IF A USER GETS TO 5 POINTS, THE USER IS CROWNED A WINNER AND THE GAME ENDS
+End the game if a user’s point gets to 5
+THE SYSTEM BEGINS THE NEXT ROUND SO FAR NONE OF THE USER IS AT 5 POINT
+The game starts again with the round count increase by 1 
+
+---
+Initialize the point of user to 0
+Initialize the point of computer to 0
+Initialize a count for the number of rounds to 1
+Prompt the user to enter a value between r,p,s 
+Randomly generate a value between 3 options
+Compare the value from the user against the value generated for the computer
+If rock vs scissors = rock wins
+	If scissors  vs paper = scissor wins
+	If paper vs rock = paper wins
+The winner’s point is increase by 1	
+
+    
+    -->
+
     <script src="script.js"></script>
 </body>
 </html>
