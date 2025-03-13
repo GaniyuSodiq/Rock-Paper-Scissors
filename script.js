@@ -16,14 +16,14 @@ function getComputerChoice(){
 
     let computerChoice = Math.floor(Math.random() * 3) + 1;
     if (computerChoice === 1){
-        return console.log("Rock");
+        return computerChoice = "Rock";
     } else if (computerChoice === 2){
-        return console.log("Paper");
+        return computerChoice = "Paper";
     } else {
-        return console.log("Scissors");
+        return computerChoice = "Scissors";
     }
 }
-getComputerChoice();
+console.log(getComputerChoice());
 
 // Write the logic to get the human choice
 
@@ -34,3 +34,10 @@ function getHumanChoice() {
     return console.log(humanChoice);
 }
 getHumanChoice();
+
+
+// Write the logic to play a single round
+
+function playRound(humanChoice, computerChoice){
+
+}
