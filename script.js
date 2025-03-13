@@ -1,3 +1,12 @@
+// Declare the players score 
+
+let humanScore = 0;
+let computerScore = 0;
+
+
+
+// Write the logic to get the computer choice
+
 function getComputerChoice(){
 
     // let randomNumb = Math.random() * 3;
@@ -14,12 +23,14 @@ function getComputerChoice(){
         return console.log("Scissors");
     }
 }
-
 getComputerChoice();
+
+// Write the logic to get the human choice
+
+
 
 function getHumanChoice() {
     let humanChoice = prompt("", "Rock, Paper, or Scissors");
     return console.log(humanChoice);
 }
-
 getHumanChoice();
