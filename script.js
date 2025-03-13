@@ -78,4 +78,16 @@ for (let i = 1; i <= 5; i++){
     playGame();
 }
 
-console.log("Human score is: " + humanScore + ", Computer score is: " + computerScore);
+if (humanScore > computerScore){
+    console.log("##### AFTER 5 ROUNDS #####")
+    console.log("YOU WON!");
+    console.log("Your score is: " + humanScore + ", Computer score is: " + computerScore);
+} else if (humanScore < computerScore){
+    console.log("##### AFTER 5 ROUNDS #####")
+    console.log("YOU LOST!");
+    console.log("Your score is: " + humanScore + ", Computer score is: " + computerScore);
+} else{
+    console.log("##### AFTER 5 ROUNDS #####")
+    console.log("IT'S DRAW");
+    console.log("Your score is: " + humanScore + ", Computer score is: " + computerScore);
+}
