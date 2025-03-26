@@ -29,7 +29,7 @@ const scorePara = document.querySelector("#score");
 
 
 rockBtn.addEventListener("click", () => {
-       let humanChoice = "rock";
+    let humanChoice = "rock";
     return playRound(humanChoice, getComputerChoice());
 });
 
