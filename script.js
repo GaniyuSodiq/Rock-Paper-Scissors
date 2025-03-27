@@ -28,6 +28,9 @@ const resultMessage = document.querySelector("#message");
 const scorePara = document.querySelector("#score");
 const controlsContainer = document.querySelector("#controls");
 
+const finalBoard = document.createElement("p");
+
+
 // rockBtn.addEventListener("click", () => {
 //     let humanChoice = "rock";
 //     return playRound(humanChoice, getComputerChoice());
@@ -44,19 +47,19 @@ const controlsContainer = document.querySelector("#controls");
 // });
 
 controlsContainer.addEventListener("click", (event) => {
+    if (humanScore === 5 || computerScore === 5){
+        finalBoard.textContent ="WINNER ALREADY DECLARED! Refresh the page to play again."; 
+        return controlsContainer.appendChild(finalBoard);
+    }
     let target = event.target;
-
     switch (target.id) {
         case "rock":
-            // let humanChoice = "rock";
             playRound("rock", getComputerChoice());
             break;
         case "paper":
-           // let humanChoice = "paper";
             playRound("paper", getComputerChoice());
             break;
         case "scissors":
-            // let humanChoice = "scissors";
             playRound("scissors", getComputerChoice());
             break;
         default:
