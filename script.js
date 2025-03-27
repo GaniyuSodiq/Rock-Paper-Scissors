@@ -26,22 +26,46 @@ const paperBtn = document.querySelector("#paper");
 const scissorsBtn = document.querySelector("#scissors");
 const resultMessage = document.querySelector("#message");
 const scorePara = document.querySelector("#score");
+const controlsContainer = document.querySelector("#controls");
+
+// rockBtn.addEventListener("click", () => {
+//     let humanChoice = "rock";
+//     return playRound(humanChoice, getComputerChoice());
+// });
+
+// paperBtn.addEventListener("click", () => {
+//     let humanChoice = "paper";
+//     return playRound(humanChoice, getComputerChoice());
+// });
+
+// scissorsBtn.addEventListener("click", () => {
+//     let humanChoice = "scissors";
+//     return playRound(humanChoice, getComputerChoice());
+// });
+
+controlsContainer.addEventListener("click", (event) => {
+    let target = event.target;
+
+    switch (target.id) {
+        case "rock":
+            // let humanChoice = "rock";
+            playRound("rock", getComputerChoice());
+            break;
+        case "paper":
+           // let humanChoice = "paper";
+            playRound("paper", getComputerChoice());
+            break;
+        case "scissors":
+            // let humanChoice = "scissors";
+            playRound("scissors", getComputerChoice());
+            break;
+        default:
+            break;
+    }
+})
 
 
-rockBtn.addEventListener("click", () => {
-    let humanChoice = "rock";
-    return playRound(humanChoice, getComputerChoice());
-});
 
-paperBtn.addEventListener("click", () => {
-    let humanChoice = "paper";
-    return playRound(humanChoice, getComputerChoice());
-});
-
-scissorsBtn.addEventListener("click", () => {
-    let humanChoice = "scissors";
-    return playRound(humanChoice, getComputerChoice());
-});
 
 // DISPLAY SCORE AND ANNOUNCE WINNER THAT REACHES 5 FIRST
 
